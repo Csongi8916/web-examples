@@ -5,19 +5,82 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Frik Erp</title>
+    <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" href="nav.css" />
     <link rel="icon" href="./favicon.png" type="image/x-icon" />
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
     />
   </head>
   <body>
-    <main>
-      <nav></nav>
-      <header></header>
-      <section></section>
-      <section></section>
-    </main>
+    <div class="flex-container">
+      <div class="sidebar active">
+        <div class="top">
+          <div class="logo">
+            <h1 class="logo-txt">frik<h1>
+          </div>
+          <i
+            class="bx bx-menu hamburger"
+            width="68"
+            height="68"
+            id="hamburger-btn"
+          ></i>
+        </div>
+        <ul>
+          <li>
+            <a href="#">
+              <i class="bx bx-cog"></i>
+              <span class="nav-item">Irányítópult</span>
+            </a>
+            <span class="tooltip">Irányítópult</span>
+          </li>
+          <li>
+            <a href="#">
+              <i class="bx bx-credit-card"></i>
+              <span class="nav-item">Pénzügyek</span>
+            </a>
+            <span class="tooltip">Pénzügyek</span>
+          </li>
+          <li>
+            <a href="#">
+              <i class="bx bxs-calendar"></i>
+              <span class="nav-item">Naptár</span>
+            </a>
+            <span class="tooltip">Naptár</span>
+          </li>
+          <li>
+            <a href="#">
+              <i class="bx bxl-amazon"></i>
+              <span class="nav-item">Termékkezelő</span>
+            </a>
+            <span class="tooltip">Termékkezelő</span>
+          </li>
+        </ul>
+      </div>
+
+      <div class="main-content">
+        <h1>ddad</h1>
+      </div>
+    </div>
+
+    <script>
+      let hamburgerBtn = document.querySelector("#hamburger-btn");
+      let sidebar = document.querySelector(".sidebar");
+
+      hamburgerBtn.onclick = function () {
+        const isActive = sidebar.classList.toggle("active");
+        if (isActive) {
+          sidebar.setAttribute("style", "width: 250px");
+        } else {
+          sidebar.setAttribute("style", "width: 80px");
+        }
+        console.log(isActive);
+      };
+    </script>
   </body>
 </html>

@@ -1,56 +1,104 @@
-/* The side navigation menu */
 .sidebar {
-  margin: 0;
-  padding: 0;
-  width: 200px;
-  background-color: #f1f1f1;
-  position: fixed;
-  height: 100%;
-  overflow: auto;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 250px;
+  background-color: var(--baby-blue);
+  padding: .4rem .8rem;
+  transition: all 0.5s ease;
 }
 
-/* Sidebar links */
-.sidebar a {
-  display: block;
+.sidebar #hamburger-btn {
+  position: absolute;
   color: black;
-  padding: 16px;
+  top: 30px;
+  left: 2%;
+  font-size: 1.9rem;
+  transform: translateX('-25%');
+  transition: all 0.5s ease;
+  cursor: pointer;
+}
+
+.sidebar.active #hamburger-btn {
+  left: 17%;
+}
+
+.sidebar .top {
+  margin: 10px 0px 40px 0px;
+}
+
+.sidebar .top .logo {
+  color: var(--navy-blue);
+  display: flex;
+  margin: auto;
+  height: 50px;
+  width: 100%;
+  align-items: center;
+  opacity: 0;
+}
+
+.sidebar.active .top .logo {
+  opacity: 1;
+}
+
+.sidebar .top .logo {
+  font-size: 1.6rem;
+}
+
+.sidebar ul li {
+  position: relative;
+  list-style-type: none;
+  height: 50px;
+  margin: 0.8rem auto;
+  line-height: 50px;
+}
+
+.sidebar ul li a {
+  color: black;
+  display: flex;
+  align-items: center;
   text-decoration: none;
+  border-radius: 0.8rem;
 }
 
-/* Active/current link */
-.sidebar a.active {
-  background-color: #04AA6D;
-  color: white;
+.sidebar ul li a:hover {
+  background-color: var(--navy-blue);
+  color: #fff;
 }
 
-/* Links on mouse-over */
-.sidebar a:hover:not(.active) {
-  background-color: #555;
-  color: white;
+.sidebar ul li a i {
+  min-width: 50px;
+  text-align: center;
+  height: 50px;
+  font-size: 1.5rem;
+  border-radius: 12px;
+  line-height: 50px;
 }
 
-/* Page content. The value of the margin-left property should match the value of the sidebar's width property */
-div.content {
-  margin-left: 200px;
-  padding: 1px 16px;
-  height: 1000px;
+.sidebar .nav-item {
+  opacity: 0;
 }
 
-/* On screens that are less than 700px wide, make the sidebar into a topbar */
-@media screen and (max-width: 700px) {
-  .sidebar {
-    width: 100%;
-    height: auto;
-    position: relative;
-  }
-  .sidebar a {float: left;}
-  div.content {margin-left: 0;}
+.sidebar.active .nav-item {
+  opacity: 1;
 }
 
-/* On screens that are less than 400px, display the bar vertically, instead of horizontally */
-@media screen and (max-width: 400px) {
-  .sidebar a {
-    text-align: center;
-    float: none;
-  }
+.sidebar ul li .tooltip {
+  position: absolute;
+  left: 85px;
+  top: 0%;
+  box-shadow: 0 0.5rem 0.8rem rgba(0, 0, 0, 0.2);
+  border-radius: .6rem;
+  padding: .4rem 1.2rem;
+  line-height: 1.8rem;
+  z-index: 100;
+  opacity: 0;
+}
+
+.sidebar.active ul li .tooltip {
+  display: none;
+}
+
+.sidebar ul li:hover .tooltip {
+  opacity: 1;
 }
