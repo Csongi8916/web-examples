@@ -5,9 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Frik Erp</title>
-    <link rel="stylesheet" href="style.css" />
-    <link rel="stylesheet" href="nav.css" />
-    <link rel="stylesheet" href="header.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/nav.css" />
+    <link rel="stylesheet" href="css/header.css" />
+    <link rel="stylesheet" href="css/chart.css" />
     <link rel="icon" href="./favicon.png" type="image/x-icon" />
     <link
       href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
@@ -115,32 +116,9 @@
       </div>
     </div>
 
-    <script>
-      let hamburgerBtn = document.querySelector("#hamburger-btn");
-      let sidebar = document.querySelector(".sidebar");
-
-      hamburgerBtn.onclick = function () {
-        const isActive = sidebar.classList.toggle("active");
-        if (isActive) {
-          sidebar.setAttribute("style", "min-width: 250px");
-          sidebar.setAttribute("style", "width: 250px");
-        } else {
-          sidebar.setAttribute("style", "min-width: 80px");
-          sidebar.setAttribute("style", "width: 80px");
-        }
-        console.log(isActive);
-      };
-    </script>
-
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js">
     </script>
-
-    <script>
-      const myChart = new Chart("myChart", {
-        type: "scatter",
-        data: {},
-        options: {}
-      });
-    </script>
+    <script src="js/nav.js"></script>
+    <script src="js/chart.js"></script>
   </body>
 </html>
