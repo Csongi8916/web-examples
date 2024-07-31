@@ -20,7 +20,7 @@
 }
 
 .sidebar.active #hamburger-btn {
-  left: 17%;
+  left: 14%;
 }
 
 .sidebar .top {
@@ -91,7 +91,7 @@
   border-radius: .6rem;
   padding: .4rem 1.2rem;
   line-height: 1.8rem;
-  z-index: 100;
+  z-index: 20;
   opacity: 0;
 }
 

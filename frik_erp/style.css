@@ -1,0 +1,86 @@
+* {
+  --navy-blue: #05445E;
+  --baby-blue: #DCDCDC;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.flex-container {
+  display: flex;
+}
+
+.flex-column-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.sidebar.action header {
+  width: 100vw;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  height: 80px;
+  width: calc(100vw - 250px);
+  background-color: var(--baby-blue);
+  padding: 10px 0px 10px 0px;
+}
+
+header .left-header {
+  display: flex;
+  margin-left: 20px;
+}
+
+header .right-header {
+  display: flex;
+  justify-content: right;
+}
+
+header .header-item {
+  margin-right: 30px;
+}
+
+header .header-item:last-of-type {
+  margin-left: auto;
+}
+
+header .chip-container {
+  display: flex;
+  margin-top: 5px;
+}
+
+header .right-header-item {
+  margin-right: 10px;
+  margin-top: 5px;
+  padding: 5px 10px;
+  cursor: pointer;
+  font-size: 25px;
+  border-radius: 0.8rem;
+}
+
+header .right-header-item:hover {
+  background-color: var(--navy-blue);
+  color: #fff;
+}
+
+header .right-header-item.avatar {
+  margin-right: 0px;
+  font-size: 16px;
+}
+
+.chip {
+  background-color: var(--navy-blue);
+  color: #fff;
+  font-size: 10px;
+  padding: 5px 10px;
+  margin-right: 5px;
+  border-radius: 5px;
+}
+
+.chip-title {
+  font-size: 16px;
+}
+
