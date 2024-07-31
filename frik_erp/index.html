@@ -108,17 +108,24 @@
         </header>
 
         <main>
-          <section>
-            <canvas id="myChart" style="width:100%;max-width:700px;height: 300px"></canvas>
+          <section class="offering">
+            <h3>Bevétel évekre lebontva</h3>
+            <hr class="chart-separator" />
+            <canvas id="offeringChart"></canvas>
+          </section>
+          <section class="incoming">
+            <h3>Kiadott ajánlatok értéke</h3>
+            <hr class="chart-separator" />
+            <canvas id="incomingChart"></canvas>
           </section>
         </main>
 
       </div>
     </div>
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js">
-    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js"></script>
     <script src="js/nav.js"></script>
-    <script src="js/chart.js"></script>
+    <script src="js/offring-chart.js"></script>
+    <script src="js/incoming-chart.js"></script>
   </body>
 </html>

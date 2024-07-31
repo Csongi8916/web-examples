@@ -87,6 +87,8 @@
   position: absolute;
   left: 85px;
   top: 0%;
+  background-color: var(--navy-blue);
+  color: #fff;
   box-shadow: 0 0.5rem 0.8rem rgba(0, 0, 0, 0.2);
   border-radius: .6rem;
   padding: .4rem 1.2rem;
