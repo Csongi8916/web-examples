@@ -1,5 +1,13 @@
 const offers = [1, 2, 3, 4, 5];
 
+const color = {
+  orange: '#ed7d15',
+  blue: 'rgb(104, 156, 237)',
+  green: '#1cdb0b',
+  red: '#e01437',
+  yellow: '#e0d914'
+}
+
 const values = [
   [500000, 1000000, 1300000, 4000000, 100000], // new
   [1000000, 2000000, 100000, 3000000, 200000], // sent
@@ -14,31 +22,31 @@ const data = {
     {
       label: 'Új',
       data: values[0],
-      backgroundColor: 'orange',
+      backgroundColor: color.orange,
       stack: 'Stack 0',
     },
     {
       label: 'Kiküldve',
       data: values[1],
-      backgroundColor: 'blue',
+      backgroundColor: color.blue,
       stack: 'Stack 1',
     },
     {
       label: 'Elfogadva',
       data: values[2],
-      backgroundColor: 'green',
+      backgroundColor: color.green,
       stack: 'Stack 2',
     },
     {
       label: 'Elutasítva',
       data: values[3],
-      backgroundColor: 'red',
+      backgroundColor: color.red,
       stack: 'Stack 3',
     },
     {
       label: 'Módosítva',
       data: values[4],
-      backgroundColor: 'yellow',
+      backgroundColor: color.yellow,
       stack: 'Stack 4',
     },
   ]

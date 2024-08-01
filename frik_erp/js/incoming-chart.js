@@ -1,6 +1,6 @@
 const years = [2023, 2024];
 const amounts = [1100000, 2100000];
-const offeringBarColors = ["blue", "blue"];
+const offeringBarColors = ["rgb(104, 156, 237, 0.5)", "rgb(104, 156, 237, 0.5)"];
 
 new Chart("offeringChart", {
   type: "bar",
