@@ -1,0 +1,40 @@
+* {
+  --frik-blue: #267fbf;
+  --frik-gray: #252525;
+  --frik-darkblue: #0015f0;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+  height: 200vh;
+}
+
+main {
+}
+
+.container {
+  position: relative;
+  height: 100vh;
+  color: white;
+  background-image: url("../img-bg.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-color: rgba(0, 0, 0, 0.8);
+  box-shadow: inset 0 0 0 2000px rgba(0, 0, 0, 0.5);
+}
+
+.highlight-text {
+  font-size: 48px;
+}
+
+.important-text {
+  font-size: 20px;
+}
+
+.regular-text {
+  font-size: 16;
+}
