@@ -8,35 +8,29 @@
 }
 
 .sidebar #hamburger-btn {
-  position: absolute;
   color: black;
-  top: 30px;
-  left: 2%;
+  margin-top: 15px;
+  margin-right: 10px;
   font-size: 1.9rem;
-  transform: translateX('-25%');
   cursor: pointer;
 }
 
-.sidebar.active #hamburger-btn {
-  left: 14%;
-}
-
 .sidebar .top {
+  display: flex;
+  justify-content: center;
   margin: 10px 0px 40px 0px;
 }
 
 .sidebar .top .logo {
   color: var(--navy-blue);
-  display: flex;
   margin: auto;
   height: 50px;
   width: 100%;
-  align-items: center;
-  opacity: 0;
+  display: none;
 }
 
 .sidebar.active .top .logo {
-  opacity: 1;
+  display: block;
 }
 
 .sidebar .top .logo {
