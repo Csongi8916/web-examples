@@ -1,22 +1,30 @@
-const years = ["Italy", "France", "Spain", "USA", "Argentina"];
-const amounts = [55, 49, 44, 24, 15];
-const barColors = ["red", "green","blue","orange","brown"];
+const years = [2023, 2024];
+const amounts = [1100000, 2100000];
+const offeringBarColors = ["blue", "blue"];
 
-new Chart("incomingChart", {
+new Chart("offeringChart", {
   type: "bar",
   data: {
-    labels: xValues,
+    labels: years,
     datasets: [{
-      backgroundColor: barColors,
-      data: yValues
+      backgroundColor: offeringBarColors,
+      data: amounts
     }]
   },
   options: {
     legend: {display: false},
-    title: {
-      display: true,
-      text: "World Wine Production 2018"
+    scales: {
+      yAxes: [{
+        ticks: {
+          beginAtZero: true,
+          min: 0,
+          max: 2500000,
+          stepSize: 500000,
+          callback: function(label, index, labels) {
+            return label.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+          }
+        }
+      }]
     }
   }
 });
-

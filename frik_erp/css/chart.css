@@ -4,11 +4,15 @@ main {
   height: 100%;
 }
 
+main .chart-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
 main .offering {
   background-color: #fff;
-  width: 35vw;
-  max-width: 700px;
-  max-height: 450px;
+  width: 37vw;
   margin: 20px;
   padding: 20px;
   border: 2px solid var(--baby-blue);
@@ -17,9 +21,7 @@ main .offering {
 
 main .incoming {
   background-color: #fff;
-  width: 35vw;
-  max-width: 700px;
-  max-height: 450px;
+  width: 37vw;
   margin: 20px;
   padding: 20px;
   border: 2px solid var(--baby-blue);
@@ -31,5 +33,8 @@ main .incoming .chart {
 }
 
 .chart-separator {
-
+  margin-top: 10px;
+  margin-bottom: 15px;
+  background-color: var(--baby-blue);
+  height: 2px;
 }

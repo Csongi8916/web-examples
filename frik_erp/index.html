@@ -22,12 +22,7 @@
           <div class="logo">
             <h1 class="logo-txt">frik<h1>
           </div>
-          <i
-            class="bx bx-menu hamburger"
-            width="68"
-            height="68"
-            id="hamburger-btn"
-          ></i>
+          <i class="bx bx-menu hamburger" id="hamburger-btn"></i>
         </div>
         <ul>
           <li>
@@ -89,7 +84,7 @@
               <div class="chip"><span>4</span></div>
             </div>
           </div>
-          <div class="header-item right-header">
+          <div id="user-menu" class="header-item right-header">
             <div class="right-header-item">
               <i class='bx bxs-contact' ></i>
             </div>
@@ -108,18 +103,19 @@
         </header>
 
         <main>
-          <section class="offering">
-            <h3>Bevétel évekre lebontva</h3>
-            <hr class="chart-separator" />
-            <canvas id="offeringChart"></canvas>
-          </section>
-          <section class="incoming">
-            <h3>Kiadott ajánlatok értéke</h3>
-            <hr class="chart-separator" />
-            <canvas id="incomingChart"></canvas>
-          </section>
+          <div class="chart-container">
+            <section class="incoming">
+              <h3>Kiadott ajánlatok értéke</h3>
+              <hr class="chart-separator" />
+              <canvas id="offeringChart"></canvas>
+            </section>
+            <section class="offering">
+              <h3>Bevétel évekre lebontva</h3>
+              <hr class="chart-separator" />
+              <canvas id="incomingChart"></canvas>
+            </section>
+          </div>
         </main>
-
       </div>
     </div>
 
