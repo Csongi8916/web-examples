@@ -1,0 +1,98 @@
+.sidebar {
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 250px;
+  background-color: var(--baby-blue);
+  padding: .4rem .8rem;
+}
+
+.sidebar #hamburger-btn {
+  color: black;
+  margin-top: 15px;
+  margin-right: 10px;
+  font-size: 1.9rem;
+  cursor: pointer;
+}
+
+.sidebar .top {
+  display: flex;
+  justify-content: center;
+  margin: 10px 0px 40px 0px;
+}
+
+.sidebar .top .logo {
+  color: var(--navy-blue);
+  margin: auto;
+  height: 50px;
+  width: 100%;
+  display: none;
+}
+
+.sidebar.active .top .logo {
+  display: block;
+}
+
+.sidebar .top .logo {
+  font-size: 1.6rem;
+}
+
+.sidebar ul li {
+  position: relative;
+  list-style-type: none;
+  height: 50px;
+  margin: 0.8rem auto;
+  line-height: 50px;
+}
+
+.sidebar ul li a {
+  color: black;
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  border-radius: 0.8rem;
+}
+
+.sidebar ul li a:hover {
+  background-color: var(--navy-blue);
+  color: #fff;
+}
+
+.sidebar ul li a i {
+  min-width: 50px;
+  text-align: center;
+  height: 50px;
+  font-size: 1.5rem;
+  border-radius: 12px;
+  line-height: 50px;
+}
+
+.sidebar .nav-item {
+  opacity: 0;
+}
+
+.sidebar.active .nav-item {
+  opacity: 1;
+}
+
+.sidebar ul li .tooltip {
+  position: absolute;
+  left: 85px;
+  top: 0%;
+  background-color: var(--navy-blue);
+  color: #fff;
+  box-shadow: 0 0.5rem 0.8rem rgba(0, 0, 0, 0.2);
+  border-radius: .6rem;
+  padding: .4rem 1.2rem;
+  line-height: 1.8rem;
+  z-index: 20;
+  opacity: 0;
+}
+
+.sidebar.active ul li .tooltip {
+  display: none;
+}
+
+.sidebar ul li:hover .tooltip {
+  opacity: 1;
+}

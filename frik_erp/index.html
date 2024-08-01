@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Frik Erp</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/nav.css" />
+    <link rel="stylesheet" href="css/header.css" />
+    <link rel="stylesheet" href="css/chart.css" />
+    <link rel="icon" href="./favicon.png" type="image/x-icon" />
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="flex-container">
+      <div class="sidebar active">
+        <div class="top">
+          <div class="logo">
+            <h1 class="logo-txt">frik<h1>
+          </div>
+          <i class="bx bx-menu hamburger" id="hamburger-btn"></i>
+        </div>
+        <ul>
+          <li>
+            <a href="#">
+              <i class="bx bx-cog"></i>
+              <span class="nav-item">Irányítópult</span>
+            </a>
+            <span class="tooltip">Irányítópult</span>
+          </li>
+          <li>
+            <a href="#">
+              <i class="bx bx-credit-card"></i>
+              <span class="nav-item">Pénzügyek</span>
+            </a>
+            <span class="tooltip">Pénzügyek</span>
+          </li>
+          <li>
+            <a href="#">
+              <i class="bx bxs-calendar"></i>
+              <span class="nav-item">Naptár</span>
+            </a>
+            <span class="tooltip">Naptár</span>
+          </li>
+          <li>
+            <a href="#">
+              <i class="bx bxl-amazon"></i>
+              <span class="nav-item">Termékkezelő</span>
+            </a>
+            <span class="tooltip">Termékkezelő</span>
+          </li>
+        </ul>
+      </div>
+
+      <div class="flex-column-container ">
+        <header>
+          <div style="margin-left: 20px;" class="header-item">
+            <p class="chip-title">Projektek</p>
+            <div class="chip-container">
+              <div class="chip"><span>6</span></div>
+              <div class="chip"><span>0</span></div>
+              <div class="chip"><span>0</span></div>
+            </div>
+          </div>
+          <div class="header-item">
+            <p class="chip-title">Jegyek</p>
+            <div class="chip-container">
+              <div class="chip"><span>7</span></div>
+              <div class="chip"><span>0</span></div>
+              <div class="chip"><span>0</span></div>
+              <div class="chip"><span>5</span></div>
+            </div>
+          </div>
+          <div class="header-item">
+            <p class="chip-title">Leadek</p>
+            <div class="chip-container">
+              <div class="chip"><span>9</span></div>
+              <div class="chip"><span>3</span></div>
+              <div class="chip"><span>3</span></div>
+              <div class="chip"><span>4</span></div>
+            </div>
+          </div>
+          <div id="user-menu" class="header-item right-header">
+            <div class="right-header-item">
+              <i class='bx bxs-contact' ></i>
+            </div>
+            <div class="right-header-item">
+              <i class='bx bx-star' ></i>
+            </div>
+            <div class="right-header-item">
+              <i class='bx bx-bell'></i>
+            </div>
+            <div class="right-header-item avatar">
+              <i style="font-size: 35px; vertical-align: middle;"
+                class='bx bxs-user-circle avatar'></i>
+              <span>Komár Csongor</span>
+            </div>
+          </div>
+        </header>
+
+        <main>
+          <div class="chart-container">
+            <section class="incoming">
+              <h3>Bevétel évekre lebontva</h3>
+              <hr class="chart-separator" />
+              <canvas id="offeringChart"></canvas>
+            </section>
+            <section class="offering">
+              <h3>Kiadott ajánlatok értéke</h3>
+              <hr class="chart-separator" />
+              <canvas id="incomingChart"></canvas>
+            </section>
+          </div>
+        </main>
+      </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js"></script>
+    <script src="js/nav.js"></script>
+    <script src="js/offring-chart.js"></script>
+    <script src="js/incoming-chart.js"></script>
+  </body>
+</html>
