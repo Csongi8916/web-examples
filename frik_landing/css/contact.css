@@ -25,12 +25,6 @@
   align-items: center;
 }
 
-.contact .social {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-}
-
 input[type=text], textarea {
   width: 30vw;
   padding: 12px;
