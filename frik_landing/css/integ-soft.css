@@ -27,12 +27,7 @@
   margin: 20px;
 }
 
-.integ-soft-content-title {
-  font-size: 21px;
-  margin: 15px 1px 15px 0px;
-}
-
-.integ-soft .integ-soft-content-title.sec-color {
+.integ-soft .content-title.sec-color {
   color: var(--frik-blue);
 }
 
