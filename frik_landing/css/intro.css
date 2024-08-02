@@ -6,6 +6,17 @@
   margin-top: 20vh;
 }
 
+.container {
+  position: relative;
+  height: 100vh;
+  color: white;
+  background-image: url("../img-bg.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  box-shadow: inset 0 0 0 2000px rgba(0, 0, 0, 0.5);
+}
+
 .intro .landing-title {
   margin-bottom: 40px;
   font-weight: 600;

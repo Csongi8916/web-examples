@@ -1,5 +1,6 @@
 * {
   --frik-blue: #267fbf;
+  --frik-bg-gray: #F8F8F8;
   --frik-gray: #252525;
   --frik-darkblue: #0015f0;
   margin: 0;
@@ -15,15 +16,8 @@ body {
 main {
 }
 
-.container {
-  position: relative;
-  height: 100vh;
-  color: white;
-  background-image: url("../img-bg.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-  box-shadow: inset 0 0 0 2000px rgba(0, 0, 0, 0.5);
+.flex-container {
+  display: flex;
 }
 
 .section-title {
@@ -42,9 +36,11 @@ main {
 }
 
 .intro-text {
+  color: var(--frik-gray);
   font-size: 20px;
 }
 
 .regular-text {
-  font-size: 16px;
+  color: var(--frik-gray);
+  font-size: 18px;
 }

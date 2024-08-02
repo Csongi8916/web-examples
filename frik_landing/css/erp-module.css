@@ -43,7 +43,7 @@
   padding: 20px;
   display: none;
   overflow: hidden;
-  background-color: whitesmoke;
+  background-color:  var(--frik-bg-gray);
   color: var(--frik-gray);
 }
 
@@ -75,4 +75,5 @@
 .module-text {
   text-align: justify;
   margin-bottom: 10px;
+  color: var(--frik-gray);
 }

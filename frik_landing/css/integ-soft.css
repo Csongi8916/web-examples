@@ -1,9 +1,10 @@
-.integ-soft  {
+.integ-soft {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   margin-top: 60px;
+  background-color: var(--frik-bg-gray);
 }
 
 .integ-soft-container {
@@ -11,4 +12,27 @@
   max-width: 1200px;
   margin: 10px;
   margin-bottom: 40px;
+}
+
+.integ-soft-intro {
+  margin-bottom: 20px;
+  text-align: justify;
+}
+
+.integ-soft-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 20px;
+}
+
+.integ-soft-content-title {
+  font-size: 21px;
+  margin: 15px 1px 15px 0px;
+}
+
+.integ-soft-text {
+  text-align: justify;
+  max-width: 350px;
 }
