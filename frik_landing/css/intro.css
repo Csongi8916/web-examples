@@ -7,13 +7,13 @@
 }
 
 .intro .landing-title {
-  margin-bottom: 25px;
+  margin-bottom: 40px;
   font-weight: 600;
 }
 
 .intro .landing-text {
   text-align: center;
-  margin-bottom: 25px;
+  margin-bottom: 40px;
   padding: 0px 20px 0px 20px;
   font-weight: 600;
 }
@@ -33,7 +33,7 @@
 
 .intro .landing-button:hover {
   background-color: #fff;
-  color: var(--frik-blue);;
+  color: var(--frik-blue);
   border: 1px solid #fff;
   transition: all 0.5s ease;
 }
