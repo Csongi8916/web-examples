@@ -19,23 +19,30 @@
   text-align: justify;
 }
 
-.contact-content {
+.contact .form-content {
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-.contact .form-content {
-  flex: 0 50%;
-  display: flex;
-  justify-content: center;
-}
-
 .contact .social {
-  flex: 0 50%;
   display: flex;
   flex-direction: column;
   justify-content: center;
+}
+
+input[type=text], textarea {
+  width: 30vw;
+  padding: 12px;
+  margin: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  resize: vertical;
+}
+
+input[type=submit] {
+  width: 30vw;
+  margin: 10px;
 }
 
 .fa {
