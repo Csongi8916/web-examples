@@ -7,8 +7,7 @@ let moduleTextContentElements = document.querySelectorAll('.module-text-content'
 //let moduleTextElements = document.querySelectorAll('.module-text');
 
 moduleTextContentElements.forEach(element => {
-  for (let i = 0; i < element.childNodes.length; i++) {
-    const paragraph =  element.childNodes[i];
-    paragraph.textContent = paragraphs[i];
-  }
+  element.childNodes[1].textContent = paragraphs[0];
+  element.childNodes[3].textContent = paragraphs[1];
+  element.childNodes[5].textContent = paragraphs[2];
 })

@@ -16,6 +16,7 @@
 
 .contact-intro {
   margin-bottom: 30px;
+  padding: 0px 20px;
   text-align: justify;
 }
 
@@ -32,11 +33,19 @@ input[type=text], textarea {
   border: 1px solid #ccc;
   border-radius: 4px;
   resize: vertical;
+
+  @media (max-width: 600px) {
+    width: 80vw;
+  }
 }
 
 input[type=submit] {
   width: 30vw;
   margin: 10px;
+
+  @media (max-width: 600px) {
+    width: 80vw;
+  }
 }
 
 .fa {

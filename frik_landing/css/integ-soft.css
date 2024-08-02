@@ -14,7 +14,7 @@
   margin-bottom: 40px;
 }
 
-.integ-soft-intro {
+.integ-soft .integ-soft-intro {
   margin-bottom: 20px;
   text-align: justify;
 }
@@ -34,4 +34,10 @@
 .integ-soft-text {
   text-align: justify;
   max-width: 350px;
+}
+
+.mobile {
+  @media (max-width: 600px) {
+    justify-content: center;
+  }
 }

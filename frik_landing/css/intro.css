@@ -20,12 +20,17 @@
 .intro .landing-title {
   margin-bottom: 40px;
   font-weight: 600;
+  
+  @media (max-width: 600px) {
+    text-align: center;  
+  }
 }
 
 .intro .landing-text {
   text-align: center;
   margin-bottom: 40px;
   padding: 0px 20px 0px 20px;
+  font-size: 30px;
   font-weight: 600;
 }
 

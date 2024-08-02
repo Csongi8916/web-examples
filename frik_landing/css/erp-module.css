@@ -70,10 +70,12 @@
 .erp-intro {
   margin-bottom: 30px;
   text-align: justify;
+  padding: 0px 20px;
 }
 
 .module-text {
   text-align: justify;
   margin-bottom: 10px;
+  font-size: 18px;
   color: var(--frik-gray);
 }
