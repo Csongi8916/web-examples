@@ -1,0 +1,31 @@
+.partner {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 60px;
+}
+
+.partner-container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 10px;
+  margin-bottom: 40px;
+}
+
+.partner-content {
+  margin: 20px;
+}
+
+.partner-img {
+  display: block;
+  width: 180px;
+  height: 120px;
+  object-fit: contain;
+}
+
+.mobile {
+  @media (max-width: 600px) {
+    justify-content: center;
+  }
+}

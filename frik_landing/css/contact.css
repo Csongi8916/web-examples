@@ -1,0 +1,83 @@
+.contact {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 60px;
+  background-color: var(--frik-bg-gray);
+}
+
+.contact-container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 10px;
+  margin-bottom: 40px;
+}
+
+.contact-intro {
+  margin-bottom: 30px;
+  padding: 0px 20px;
+  text-align: justify;
+}
+
+.contact .form-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+input[type=text], textarea {
+  width: 30vw;
+  padding: 12px;
+  margin: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  resize: vertical;
+
+  @media (max-width: 600px) {
+    width: 80vw;
+  }
+}
+
+input[type=submit] {
+  width: 30vw;
+  margin: 10px;
+
+  @media (max-width: 600px) {
+    width: 80vw;
+  }
+}
+
+.fa {
+  padding: 20px;
+  font-size: 30px;
+  width: 60px;
+  height: 60px;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px 2px;
+}
+
+.fa:hover {
+    opacity: 0.7;
+}
+
+.fa-facebook {
+  background: #3B5998;
+  color: white;
+}
+
+.fa-google {
+  background: #dd4b39;
+  color: white;
+}
+
+.fa-linkedin {
+  background: #007bb5;
+  color: white;
+}
+
+.fa-instagram {
+  background: #125688;
+  color: white;
+}

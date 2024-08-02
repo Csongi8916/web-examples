@@ -1,0 +1,43 @@
+.integ-soft {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 60px;
+  background-color: var(--frik-bg-gray);
+}
+
+.integ-soft-container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 10px;
+  margin-bottom: 40px;
+}
+
+.integ-soft .integ-soft-intro {
+  margin-bottom: 20px;
+  text-align: justify;
+}
+
+.integ-soft-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 20px;
+}
+
+.integ-soft .content-title.sec-color {
+  color: var(--frik-blue);
+}
+
+.integ-soft-text {
+  text-align: justify;
+  max-width: 350px;
+}
+
+.mobile {
+  @media (max-width: 600px) {
+    justify-content: center;
+  }
+}

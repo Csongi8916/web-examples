@@ -1,0 +1,74 @@
+* {
+  --frik-blue: #267fbf;
+  --frik-secondary-gray: #5d5d5d;
+  --frik-bg-gray: #F8F8F8;
+  --frik-gray: #252525;
+  --frik-darkblue: #0015f0;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+  height: 200vh;
+}
+
+input {
+  display: block;
+}
+
+.flex-container, .row {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.section-title {
+  color: var(--frik-gray);
+  margin-bottom: 30px;
+  text-align: center;
+  font-size: 40px;
+}
+
+.content-title {
+  font-size: 21px;
+  margin: 15px 1px 15px 0px;
+}
+
+.highlight-text {
+  font-size: 52px;
+  padding: 0px 20px;
+}
+
+.important-text {
+  font-size: 25px;
+}
+
+.intro-text {
+  color: var(--frik-gray);
+  font-size: 20px;
+}
+
+.regular-text {
+  color: var(--frik-gray);
+  font-size: 18px;
+}
+
+.frik-button {
+  text-transform: uppercase;
+  font-weight: 600;
+  font-size: 18px;
+  padding: 15px;
+  background-color: var(--frik-blue);
+  color: #fff;
+  border: 1px solid var(--frik-blue);
+  border-radius: 3px;
+  cursor: pointer;
+  transition: all 0.5s ease;
+}
+
+.frik-button:hover {
+  background-color: var(--frik-secondary-gray);
+  color: #fff;
+  transition: all 0.5s ease;
+}
