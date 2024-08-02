@@ -14,10 +14,11 @@ body {
   height: 200vh;
 }
 
-main {
+input {
+  display: block;
 }
 
-.flex-container {
+.flex-container, .row {
   display: flex;
   flex-wrap: wrap;
 }
