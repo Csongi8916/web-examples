@@ -18,6 +18,12 @@ input {
   display: block;
 }
 
+.purple-owl {
+  position: relative;
+  left: 30px;
+  top: 48px;
+}
+
 .flex-container, .row {
   display: flex;
   flex-wrap: wrap;
